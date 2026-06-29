@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXOLAYER | Advanced Manufacturing & AI</title>
+    <meta name="description" content="From high-performance composites to AI-driven marketplaces, we provide a unified ecosystem for solving the world's most complex physical challenges.">
+    
+    <!-- SEO & Social Graph Tags -->
+    <meta property="og:title" content="EXOLAYER | Advanced Manufacturing & AI">
+    <meta property="og:description" content="Providing a unified ecosystem for solving the world's most complex physical challenges via composite manufacturing, additive processes, and AI.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.exolayer.com/">
+    
+    <!-- Favicon placeholder -->
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    
+    <!-- Link to our vanilla CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Chart.js for data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Full Website Background Animation -->
+    <canvas id="site-bg-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; opacity: 1;"></canvas>
+
+    <!-- Fixed Header -->
+    <nav class="header">
+        <div class="container nav-container">
+            <div class="logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" style="display: flex; align-items: center; cursor: pointer;">
+                <img src="About%20Us/Company%20Logo/exolayer_logo_type_1.png" alt="EXOLAYER Logo" style="height: 64px; width: auto;" />
+            </div>
+            <div id="main-nav" class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#products" class="nav-link">Our Services</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#contact" class="nav-link">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- SECTION: HOME -->
+    <section id="home" class="section-padding min-h-screen" style="padding-top: 8rem; position: relative; overflow: hidden;">
+        
+        <div class="container grid-2" style="min-height: 80vh; align-content: center; align-items: center; position: relative; z-index: 1;">
+            <div class="fade-in-section">
+                <div class="overline">Design • Engineer • Manufacture</div>
+                <h1 class="heading-xl">Physical Innovation, <br/><span style="color: var(--brand-primary);">Digitally Driven.</span></h1>
+                <p class="subtitle" style="margin-bottom: 2rem;">From advanced aerospace composites and mission-critical defence systems to AI-powered manufacturing platforms — EXOLAYER delivers the complete end-to-end engineering stack.</p>
+                <div class="btn-group">
+                    <a href="#products" class="btn btn-primary" onclick="window.scrollTo({top: document.getElementById('products').offsetTop - 80, behavior: 'smooth'}); return false;">Explore Capabilities</a>
+                    <a href="#about" class="btn btn-secondary" onclick="window.scrollTo({top: document.getElementById('about').offsetTop - 80, behavior: 'smooth'}); return false;">Meet The Team</a>
+                </div>
+                <!-- Trust Badges -->
+                <div style="margin-top: 3rem; display: flex; flex-direction: column; gap: 1.5rem; opacity: 0.9;">
+                    <div>
+                        <span style="font-size: 0.75rem; font-weight: 700; color: var(--text-tertiary); letter-spacing: 0.1em; text-transform: uppercase;">Sectors</span>
+                        <div class="hero-pill-group">
+                            <span class="hero-pill">Aerospace & Defence</span>
+                            <span class="hero-pill">Automotive</span>
+                            <span class="hero-pill">Manufacturing</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="font-size: 0.75rem; font-weight: 700; color: var(--text-tertiary); letter-spacing: 0.1em; text-transform: uppercase;">Capabilities</span>
+                        <div class="hero-pill-group">
+                            <span class="hero-pill">Composites</span>
+                            <span class="hero-pill">Additive</span>
+                            <span class="hero-pill">IT & Embedded Systems</span>
+                            <span class="hero-pill">AI & ML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual fade-in-section" style="display: flex; gap: 2rem; align-items: center; position: relative; width: 100%;">
+                
+            <div class="hero-visual fade-in-section" style="display: flex; justify-content: center; align-items: center; position: relative; width: 100%;">
+                
+                <!-- Interactive 3D Exploding Logo Toy -->
+                <div class="toy-container" id="interactive-toy">
+                    <div class="core-glow" style="width: 100%; height: 100%;"></div>
+                    
+                    <svg class="toy-svg" width="257" height="345" viewBox="0 0 257 345" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Group so we can rotate the entire object in 3D -->
+                        <g class="toy-rotator" id="toy-rotator">
+                            <!-- Layer 1: Grey (Bottom) -->
+                            <g class="toy-layer" id="layer-grey">
+                                <path opacity="0.95" d="M127.871 261.496L239.484 198.438L239.487 233.094L127.871 296.388L17.5563 233.1L17.5551 198.008L127.871 261.496Z" fill="#51524E"/>
+                                <path opacity="0.95" d="M127.871 172.042L239.484 232.776L239.487 198.12L127.871 136.743L17.5563 198.114L17.5551 233.206L127.871 172.042Z" fill="#51524E"/>
+                            </g>
+                            
+                            <!-- Layer 2: Gold (Middle) -->
+                            <g class="toy-layer" id="layer-gold">
+                                <path opacity="0.95" d="M127.863 217.702L239.476 154.074L239.479 188.73L127.863 252.024L17.5485 188.735L17.5473 153.644L127.863 217.702Z" fill="#CC944C"/>
+                                <path opacity="0.95" d="M127.863 127.527L239.476 188.915L239.479 154.258L128.26 92.4478L17.5485 154.253L17.5473 189.344L127.863 127.527Z" fill="#CC944C"/>
+                            </g>
+
+                            <!-- Layer 3: Green (Top) -->
+                            <g class="toy-layer" id="layer-green">
+                                <path opacity="0.95" d="M127.871 171.913L239.484 111.179L239.487 145.835L127.871 209.13L17.5563 145.841L17.5551 110.75L127.871 171.913Z" fill="#327B57"/>
+                                <path opacity="0.95" d="M127.871 83.9688L239.484 145.965L239.487 111.309L127.871 48.0149L17.5563 111.304L17.5551 146.395L127.871 83.9688Z" fill="#327B57"/>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: PRODUCTS HUB -->
+    <section id="products" class="section-padding bg-alt">
+        <div class="container">
+            <div class="text-center fade-in-section" style="margin-bottom: 4rem;">
+                <h2 class="heading-lg">Our Vertical Ecosystem</h2>
+                <p class="subtitle" style="margin: 0 auto;">Explore our four pillars of industrial excellence. Each department is equipped to handle everything from individual parts to global supply chain integration.</p>
+            </div>
+
+            <!-- Category Selector Tabs -->
+            <div class="tabs-container fade-in-section">
+                <button data-product="composite" class="tab-btn active">Composite Manufacturing</button>
+                <button data-product="additive" class="tab-btn">Additive Manufacturing</button>
+                <button data-product="ai" class="tab-btn">AI Marketplace</button>
+                <button data-product="solutions" class="tab-btn">End-to-End Solutions</button>
+            </div>
+
+            <!-- Nested Mode Selector -->
+            <div class="mode-container fade-in-section">
+                <button data-mode="overview" class="mode-btn active">Overview</button>
+                <button data-mode="projects" class="mode-btn">Project Portfolio</button>
+            </div>
+
+            <!-- Dynamic Content Area -->
+            <div id="product-viewport" class="viewport-content fade-in-section">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: ABOUT US -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="fade-in-section" style="max-width: 900px; margin: 0 auto 5rem auto;">
+                <div style="text-align: center;">
+                    <div class="overline" style="justify-content: center; margin: 0 auto 1.5rem auto;">Our Story</div>
+                    <h2 class="heading-lg">Specialized Engineering & Technology.</h2>
+                </div>
+                <div style="margin-top: 2.5rem; font-size: 1.05rem; line-height: 1.8; color: var(--text-secondary);">
+                    <p style="margin-bottom: 1.5rem;"><strong>EXOLAYER Private Limited</strong>, based in Bangalore, is a registered Indian private company incorporated in Dec 2025. We are a core team of 5 specialists focused on complex electromechanical integrations, AI & ML, advanced structural design, mission-critical system development, and additive & composite parts manufacturing for the aerospace, defence, and automotive sectors.</p>
+                    <p style="margin-bottom: 1.5rem;">At EXOLAYER, we bridge the gap between cutting-edge digital innovation and robust physical manufacturing. By bringing mechanical design, electronics, software, and advanced materials under one roof, we eliminate the traditional silos that slow down product development. Our mission is to provide the "Digital Backbone" for physical production, enabling rapid innovation cycles that were previously impossible for complex industrial projects.</p>
+                    <p>Whether it's designing a natural fibre composite component, building an AI-powered manufacturing marketplace, or engineering mission-critical defence equipment, our team is driven by precision and scalability. We partner closely with our clients — taking their core problem statements and delivering turnkey, production-ready solutions.</p>
+                </div>
+            </div>
+            
+            <!-- Founders Section -->
+            <div class="fade-in-section">
+                <h3 class="heading-md" style="text-align: center; margin-bottom: 3rem;">Leadership Team</h3>
+                <div class="projects-grid">
+                    <!-- Founder 1: Dhanush -->
+                    <div class="founder-card">
+                        <img src="assets/team/danush-murali.jpg" alt="Dhanush Murali" class="founder-img" style="object-position: top;" />
+                        <div class="founder-info">
+                            <h4 class="founder-name">Dhanush Murali</h4>
+                            <div class="founder-title">CEO & Co-founder</div>
+                            <div class="project-divider"></div>
+                            <p class="founder-bio">Product Designer with expertise in AI & ML, Human-Centered Design, and robust Design Systems.</p>
+                            <p class="founder-bio">Previously led UX strategy and enterprise design across the insurance, industrial, and technology sectors, specializing in translating complex technical workflows into intuitive interfaces.</p>
+                        </div>
+                    </div>
+
+                    <!-- Founder 2: Prakash -->
+                    <div class="founder-card">
+                        <img src="assets/team/prakash-mishra-new.jpeg" alt="Prakash Mishra" class="founder-img" />
+                        <div class="founder-info">
+                            <h4 class="founder-name">Prakash Mishra</h4>
+                            <div class="founder-title">CTO & Co-Founder</div>
+                            <div class="project-divider"></div>
+                            <p class="founder-bio">Aerospace & Defence professional with over 30 years of experience in Avionics systems engineering, product development, and program leadership.</p>
+                            <p class="founder-bio">Former leadership executive for major global defence and aerospace organizations, with core expertise in Make-in-India industrialization and strategic business development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: CONTACT -->
+    <section id="contact" class="section-padding bg-dark">
+        <div class="container">
+            <div class="contact-card fade-in-section">
+                <div class="contact-info">
+                    <h2 class="heading-lg">Get Started.</h2>
+                    <p>Submit a problem statement or inquiry about our manufacturing capacity. Our response time for technical roadmaps is under 48 hours.</p>
+                    
+                    <div style="margin-top: 3rem;">
+                        <div class="contact-method">
+                            <div class="contact-icon" style="background: rgba(61, 127, 103, 0.1); color: var(--brand-primary); display: flex; align-items: center; justify-content: center;">
+                                <!-- Building Icon -->
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 21h18"></path>
+                                    <path d="M9 8h1"></path>
+                                    <path d="M9 12h1"></path>
+                                    <path d="M9 16h1"></path>
+                                    <path d="M14 8h1"></path>
+                                    <path d="M14 12h1"></path>
+                                    <path d="M14 16h1"></path>
+                                    <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Exolayer Pvt Ltd</h4>
+                                <p>FCI Godown Road, Vijinapura<br>Bengaluru 560016</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon" style="background: rgba(204, 159, 95, 0.1); color: var(--brand-secondary); display: flex; align-items: center; justify-content: center;">
+                                <!-- Contact Icon (Phone/Email) -->
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>+91 8762176218</h4>
+                                <p>contact@exolayer.in</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <div id="form-success-msg" class="form-success-msg" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h4>Inquiry Sent Successfully</h4>
+                        <p>Our engineering lead will contact you within 48 hours.</p>
+                    </div>
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name" class="form-label">Name <span class="required">*</span></label>
+                                <input type="text" id="contact-name" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-org" class="form-label">Organization <span class="required">*</span></label>
+                                <input type="text" id="contact-org" class="form-input" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-service" class="form-label">Service of Interest</label>
+                            <select id="contact-service" class="form-input">
+                                <option>Composite Prototype</option>
+                                <option>Additive Batch Production</option>
+                                <option>AI Platform Onboarding</option>
+                                <option>End-to-End Product Solution</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-problem" class="form-label">Problem Statement <span class="required">*</span></label>
+                            <textarea id="contact-problem" rows="4" class="form-input" placeholder="Briefly describe your challenge..." required></textarea>
+                        </div>
+                        <button type="submit" id="submit-btn" class="btn btn-submit">
+                            <span class="btn-text">Send Inquiry</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            
+            <!-- Column 1: Corporate & Compliance -->
+            <div class="footer-col">
+                <div class="logo">
+                    <img src="About%20Us/Company%20Logo/exolayer_logo_type_1.png" alt="Exolayer Logo" style="height: 48px; width: auto; object-fit: contain;">
+                </div>
+                <p class="footer-text" style="margin-top: 0.5rem;">
+                    <strong>Exolayer Pvt. Ltd.</strong><br>
+                    FCI Godown Road, Vijinapura<br>
+                    Bengaluru, Karnataka 560016
+                </p>
+                <p class="footer-text">
+                    <a href="mailto:contact@exolayer.in" class="footer-link" style="color: inherit; text-decoration: underline;">contact@exolayer.in</a><br>
+                    +91 87621 76218
+                </p>
+            </div>
+
+            <!-- Column 2: Navigation -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Company</h4>
+                <a href="#home" class="footer-link">Home</a>
+                <a href="#about" class="footer-link">About Us</a>
+                <a href="#products" class="footer-link">Capabilities</a>
+                <a href="#contact" class="footer-link">Contact Engineering</a>
+            </div>
+
+            <!-- Column 3: Legal -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Legal</h4>
+                <a href="#" class="footer-link" onclick="openLegalModal('privacy'); return false;">Privacy Policy</a>
+                <a href="#" class="footer-link" onclick="openLegalModal('terms'); return false;">Terms of Service</a>
+                <a href="#" class="footer-link" onclick="openLegalModal('compliance'); return false;">Corporate Compliance</a>
+            </div>
+
+            <!-- Column 4: Socials -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Connect</h4>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/company/exolayer-pvt-ltd/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/_exolayer_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="footer-bottom">
+            <span style="font-size: 0.8rem; color: var(--text-tertiary); font-weight: 500;">
+                &copy; 2026 EXOLAYER PVT. LTD. All rights reserved.
+            </span>
+            <span style="font-size: 0.75rem; color: var(--text-tertiary);">
+                Excellence in Advanced Manufacturing.
+            </span>
+        </div>
+    </footer>
+
+    <!-- Legal Modal -->
+    <div id="legal-modal" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2 id="modal-title" class="heading-sm" style="margin-bottom: 0;"></h2>
+                <button class="modal-close" onclick="closeLegalModal()" aria-label="Close modal">&times;</button>
+            </div>
+            <div id="modal-body" class="modal-body text-content">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to our interactive logic script -->
+    <script src="main.js"></script>
+</body>
+</html>
