@@ -3,7 +3,7 @@ const productData = {
     composite: {
         title: "Composite Manufacturing",
         tagline: "Advanced materials, engineered to perform.",
-        overviewImage: "assets/projects/overview-composite.jpg",
+        overviewImage: "overview-composite.jpg",
         desc: "We engineer and manufacture high-performance components utilizing Carbon Fibre, Kevlar, and advanced natural composites. As an authorised partner of Bcomp, we integrate industry-leading sustainable composite technologies into rigorous aerospace and automotive applications.",
         badges: ["Carbon Fibre", "Natural Fibre", "Bcomp Partner", "Wet Layup", "Prepreg"],
         chartData: [95, 70, 90, 65, 85],
@@ -13,7 +13,7 @@ const productData = {
                 client: "Authorised Partner",
                 tag: "Composite Manufacturing",
                 impact: "Certified to manufacture & sell parts using Bcomp's ampliTex™ natural fibre reinforcement technology under a formal NDA agreement.",
-                image: "assets/projects/bcomp-logo.png",
+                image: "bcomp-logo.png",
                 detail: "Bcomp's natural fibre composites are used in Formula 1, rally, and aerospace applications. As their authorised Indian partner, EXOLAYER brings this cutting-edge material capability to domestic clients."
             },
             {
@@ -21,7 +21,7 @@ const productData = {
                 client: "Volkswagen Polo",
                 tag: "Composite Manufacturing",
                 impact: "Designed and manufactured a carbon fibre bonnet with an integrated NACA duct, including full mould design and CAD modelling.",
-                image: "assets/projects/naca-duct-installed.jpg",
+                image: "naca-duct-installed.jpg",
                 detail: "Full process from mould CAD to finished CFRP part — delivering significant weight reduction and improved aerodynamic performance for track applications."
             },
             {
@@ -29,7 +29,7 @@ const productData = {
                 client: "Hyundai i20 N-Line",
                 tag: "Composite Manufacturing",
                 impact: "Engineered a custom carbon fibre cold air intake system with a 3D-printed prototype mould, followed by a finished CFRP production part.",
-                image: "assets/projects/air-intake-finished.jpg",
+                image: "air-intake-finished.jpg",
                 detail: "Full pipeline from 3D-printed prototype mould to final wet-layup carbon part. Improved airflow characteristics over the OEM intake while reducing component weight."
             }
         ]
@@ -37,7 +37,7 @@ const productData = {
     additive: {
         title: "Additive Manufacturing",
         tagline: "Rapid prototyping. Production-grade geometry.",
-        overviewImage: "assets/projects/overview-additive.jpg",
+        overviewImage: "overview-additive.jpg",
         desc: "We provide industrial FDM and SLA 3D printing services for complex geometries. From initial functional prototyping for design validation to the batch production of resilient enclosures, we ensure precision and reliability throughout the development cycle.",
         badges: ["FDM", "SLA", "Functional Prototyping", "Custom Enclosures", "Rapid Iteration"],
         chartData: [65, 95, 75, 80, 80],
@@ -47,7 +47,7 @@ const productData = {
                 client: "Smart Building Solution",
                 tag: "Additive Manufacturing",
                 impact: "Designed and 3D-printed a custom housing for a human-presence-based automation system that controls lights, fans, AC, switches, and geysers.",
-                image: "assets/projects/automated-lighting.jpg",
+                image: "automated-lighting.jpg",
                 detail: "The system uses occupancy sensing to autonomously manage all electrical loads in a room — eliminating manual switching and reducing energy consumption. The 3D-printed enclosure was designed for rapid prototyping and field deployment."
             }
         ]
@@ -55,7 +55,7 @@ const productData = {
     ai: {
         title: "AI Marketplace",
         tagline: "Connecting demand with manufacturing capacity — intelligently.",
-        overviewImage: "assets/projects/overview-ai.webp",
+        overviewImage: "overview-ai.webp",
         desc: "Our developing AI-driven marketplace is designed to streamline B2B procurement. By leveraging intelligent requirement parsing, the platform aims to efficiently connect clients with appropriate manufacturing partners based on verified capabilities, geographical proximity, and operational capacity.",
         badges: ["AI Matchmaking", "PLM Tool", "B2B + B2C", "Chatbot RFQ", "Manufacturer Dashboard"],
         chartData: [50, 80, 85, 90, 95],
@@ -73,7 +73,7 @@ const productData = {
     solutions: {
         title: "End-to-End Product Solutions",
         tagline: "From problem statement to market-ready product.",
-        overviewImage: "assets/projects/overview-solutions.png",
+        overviewImage: "overview-solutions.png",
         desc: "We offer comprehensive turnkey engineering solutions tailored to complex problem statements. Our unified approach encompasses mechanical design, electronics integration, software development, and final assembly, ensuring cohesive project execution from concept to deployment.",
         badges: ["Mechanical Design", "Electronics Integration", "Software", "Prototyping", "Defence"],
         chartData: [90, 75, 85, 88, 90],
@@ -83,7 +83,7 @@ const productData = {
                 client: "IDEX Defence Challenge",
                 tag: "End-to-End",
                 impact: "Developed a precision quality-check instrument to detect canopy lift in pressurised fighter jet cockpits, preventing critical sealing failures mid-flight.",
-                image: "assets/projects/canopy-lift-check.jpg",
+                image: "canopy-lift-check.jpg",
                 detail: "Applied to an iDEX (Innovations for Defence Excellence) problem statement. The device measures the gap between the canopy and airframe under pressurisation, ensuring the seal is within tolerance to prevent catastrophic failure during high-altitude flight."
             },
             {
@@ -91,7 +91,7 @@ const productData = {
                 client: "Electric Mobility Concept",
                 tag: "End-to-End",
                 impact: "Designed a full EV scooter chassis with a modular rear carrier system — configurable per use-case (e.g., food delivery box, cargo carrier, passenger seat).",
-                image: "assets/projects/ev-scooter-2.jpg",
+                image: "ev-scooter-2.jpg",
                 detail: "The modular carrier architecture allows the same chassis to serve multiple markets. The rear sub-frame is designed for quick-swap configuration, reducing retooling cost for OEMs targeting different delivery or lifestyle segments."
             }
         ]
